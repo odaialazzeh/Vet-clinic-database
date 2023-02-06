@@ -53,3 +53,8 @@ CREATE TABLE visits (
     visit_date DATE NOT NULL
 );
 
+-- optimise
+CREATE INDEX vet_id_index ON visits(vet_id ASC);
+CREATE INDEX email_index ON owners(email ASC);
+CREATE INDEX animal_id_index ON visits(animal_id ASC);
+
